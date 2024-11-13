@@ -1,0 +1,9 @@
+Bananas 1.52
+Dragonfruit 6.23
+Apples 0.89
+Cherries 0.12
+Apples 0.89
+Bananas 1.52
+Kiwi 2.22
+Kiwi 2.22
+Kiwi 2.22
