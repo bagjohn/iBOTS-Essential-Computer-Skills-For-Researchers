@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)file:///C:/Users/nickdg/Projects/course-material-1/open_science_and_collaboration/day_1/03_markdown_readmes.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpikeFinder</title>
+</head>
+<body>
+
+<p>
+  <strong>Exercise:</strong> Create a new file called README.md and re-create the document below using the Markdown format, 
+  so that the Markdown file when rendered in VS-Code's Preview looks very similar to how this file does when rendered in the web browser.
+</p>
+
+<p>
+  Here is a link to a Markdown reference: <a href="https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet">https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet</a>
+</p>
+
+<h1>SpikeFinder</h1>
+
+<p>Welcome to <strong>SpikeFinder</strong>, the <em>spikiest</em> tool in your neuroscience toolkit! If you're detecting spikes in calcium imaging files, this package will make your life <strong>so much easier</strong>.</p>
+
+<hr>
+
+<h2>Features</h2>
+
+<p>SpikeFinder has everything you need:</p>
+
+<ul>
+  <li><strong>Accurate Spike Detection</strong><br>
+      - Finds those pesky spikes, even the subtle ones.<br>
+      - Built-in thresholding, so you can catch <em>all</em> the spikes.</li>
+  <li><strong>Fast and Efficient</strong><br>
+      - Process huge files without breaking a sweat.<br>
+      - Optimized for those marathon data analysis sessions.</li>
+  <li><strong>User-Friendly Output</strong><br>
+      - Export results in multiple formats: <code>.csv</code>, <code>.json</code>, and even <code>.gif</code>!</li>
+</ul>
+
+<hr>
+
+<h2>Installation</h2>
+
+<p>First, ensure you have Python 3.7 or higher. Then, install SpikeFinder via pip:</p>
+
+<pre><code>pip install spikefinder</code></pre>
+
+<p>Or, if you're feeling adventurous, clone the repo and install from source:</p>
+
+<pre><code>git clone https://github.com/fake-neuro-labs/spikefinder.git
+cd spikefinder
+pip install -e .
+</code></pre>
+
+<hr>
+
+<h2>Quick Start</h2>
+
+<ol>
+  <li><strong>Import the package</strong>:</li>
+</ol>
+
+<pre><code>import spikefinder</code></pre>
+
+<ol start="2">
+  <li><strong>Load your calcium imaging file</strong>:</li>
+</ol>
+
+<pre><code>data = spikefinder.load_data("my_calcium_imaging_file.csv")</code></pre>
+
+<ol start="3">
+  <li><strong>Run spike detection</strong>:</li>
+</ol>
+
+<pre><code>results = spikefinder.detect_spikes(data)</code></pre>
+
+<ol start="4">
+  <li><strong>View your spikes</strong>:</li>
+</ol>
+
+<pre><code>spikefinder.plot_spikes(results)</code></pre>
+
+<p><em>...and that’s it!</em></p>
+
+<hr>
+
+<h3>Example Output</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time (s)</th>
+      <th>Signal Intensity</th>
+      <th>Spike Detected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>1.4</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>0.8</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>2.1</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Configuration Options</h2>
+
+<p>Want more control? Customize SpikeFinder to your heart’s content:</p>
+
+<ul>
+  <li><code>threshold</code> (<em>float</em>): Set the detection threshold. Defaults to <code>1.0</code>.</li>
+  <li><code>window_size</code> (<em>int</em>): Set the smoothing window size in milliseconds. Defaults to <code>50</code>.</li>
+</ul>
+
+<p>Example usage:</p>
+
+<pre><code>results = spikefinder.detect_spikes(data, threshold=1.5, window_size=100)</code></pre>
+
+<hr>
+
+<h3>Pro Tips</h3>
+
+<blockquote>
+  <p><strong>Pro Tip:</strong> Lowering the threshold means <em>more</em> spikes detected, but be careful of false positives!</p>
+</blockquote>
+
+<h4>FAQs</h4>
+
+<p><strong>Q: Can SpikeFinder handle multiple files at once?</strong><br>
+A: Absolutely! Batch processing is baked right in.</p>
+
+<p><strong>Q: What formats does SpikeFinder support?</strong><br>
+A: Currently, <code>.csv</code>, <code>.tsv</code>, and <code>.nwb</code> are supported. Let us know if you need more!</p>
+
+<hr>
+
+<h2>Contributing</h2>
+
+<p><em>Want to help make SpikeFinder even better?</em> Here’s how you can contribute:</p>
+
+<ol>
+  <li><strong>Fork the repo</strong></li>
+  <li><strong>Create a new branch</strong></li>
+  <li><strong>Submit a pull request</strong></li>
+</ol>
+
+<p>If you want to discuss your ideas first, open an issue!</p>
+
+<hr>
+
+<h2>License</h2>
+
+<p>SpikeFinder is licensed under the MIT License. Check the <code>LICENSE</code> file for details.</p>
+
+<hr>
+
+<h2>Troubleshooting</h2>
+
+<p>If SpikeFinder is acting a little too <em>spiky</em>, try the following:</p>
+
+<ol>
+  <li><strong>Restart your environment</strong><br>
+      - Sometimes, all it takes is a good restart.</li>
+  <li><strong>Check your Python version</strong><br>
+      - SpikeFinder works best with Python 3.7+.</li>
+</ol>
+
+<p>Still having issues? Open an issue or email us at <a href="mailto:help@fake-neuro-labs.com">help@fake-neuro-labs.com</a>.</p>
+
+<hr>
+
+<h2>Authors</h2>
+
+<p>SpikeFinder is brought to you by <strong>NeuroNerds Inc.</strong> and supported by caffeine and high hopes.</p>
+
+
+
+</body></html>
